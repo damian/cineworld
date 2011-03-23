@@ -3,11 +3,7 @@ h1. Cineworld
 A very simple wrapper around the "Cineworld API":https://www.cineworld.co.uk/developer/api using "HTTParty":https://github.com/jnunemaker/httparty.
 
 h2. Installation
-<pre>
-<code>
-  gem install cineworld
-</code>
-</pre>
+<pre><code>gem install cineworld</code></pre>
 
 h2. Examples
 
@@ -23,6 +19,7 @@ h2. Examples
   puts cinemas.films
 
   # Get all dates that have programmed performances
+  puts cinemas.dates
 
   # Get all performances that are programmed for a particular cinema, film and date
   puts cineworld.performances
@@ -31,9 +28,9 @@ h2. Examples
 
 h2. TODO
 
-Tests
+* Tests
 
-== Contributing to cineworld
+h2. Contributing to cineworld
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
@@ -43,7 +40,7 @@ Tests
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-== Copyright
+h2. Copyright
 
 Copyright (c) 2011 Damian Nicholson. See LICENSE.txt for
 further details.
