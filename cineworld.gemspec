@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.textile",
     "Rakefile",
     "VERSION",
+    "cineworld.gemspec",
     "lib/cineworld.rb",
     "test/helper.rb",
     "test/test_cineworld.rb"
