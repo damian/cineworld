@@ -15,9 +15,9 @@ Jeweler::Tasks.new do |gem|
   gem.name = "cineworld"
   gem.homepage = "http://github.com/damian/cineworld"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "damian.nicholson@cef.co.uk"
+  gem.summary = "A simple wrapper around the Cineworld API"
+  gem.description = "A simple wrapper around the Cineworld API using HTTParty"
+  gem.email = "damian.nicholson21@gmail.com"
   gem.authors = ["Damian Nicholson"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)

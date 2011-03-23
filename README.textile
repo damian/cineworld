@@ -1,9 +1,40 @@
-= cineworld
+h1. Cineworld
 
-Description goes here.
+A very simple wrapper around the "Cineworld API":https://www.cineworld.co.uk/developer/api using "HTTParty":https://github.com/jnunemaker/httparty.
+
+h2. Installation
+<pre>
+<code>
+  gem install cineworld
+</code>
+</pre>
+
+h2. Examples
+
+<pre>
+<code>
+  # Initialise with your API key
+  cineworld = Cineworld::API.new('API_KEY')
+
+  # Get all cinemas that have programmed performances
+  puts cineworld.cinemas
+
+  # Get all films that have programmed performances
+  puts cinemas.films
+
+  # Get all dates that have programmed performances
+
+  # Get all performances that are programmed for a particular cinema, film and date
+  puts cineworld.performances
+</code>
+</pre>
+
+h2. TODO
+
+Tests
 
 == Contributing to cineworld
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
 * Fork the project
