@@ -16,10 +16,10 @@ h2. Examples
   puts cineworld.cinemas
 
   # Get all films that have programmed performances
-  puts cinemas.films
+  puts cineworld.films
 
   # Get all dates that have programmed performances
-  puts cinemas.dates
+  puts cineworld.dates
 
   # Get all performances that are programmed for a particular cinema, film and date
   puts cineworld.performances
