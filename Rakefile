@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = "A simple wrapper around the Cineworld API"
   gem.description = "A simple wrapper around the Cineworld API using HTTParty"
   gem.email = "damian.nicholson21@gmail.com"
-  gem.authors = ["Damian Nicholson"]
+  gem.authors = ["Damian Nicholson", "Marek Skrobacki"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'

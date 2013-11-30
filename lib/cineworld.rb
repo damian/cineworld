@@ -11,24 +11,14 @@ module Cineworld
       @key = key
     end
 
-    def cinemas(options = {})
-      options.merge!(:key => @key)
-      self.class.get('/cinemas', :query => options)
-    end
-
-    def films(options = {})
-      options.merge!(:key => @key)
-      self.class.get('/films', :query => options)
-    end
-
-    def dates(options = {})
-      options.merge!(:key => @key)
-      self.class.get('/dates', :query => options)
-    end
-
-    def performances(options = {})
-      options.merge!(:key => @key)
-      self.class.get('/performances', :query => options)
+    def initialize(key)
+        @key = key
+        %w{cinemas films performances dates}.each do |methodname|
+                self.class.send(:define_method, methodname) do |opts={}|
+                opts.merge!(:key => @key)
+                self.class.get("/#{methodname}", :query => opts)
+            end
+        end
     end
   end
 end
